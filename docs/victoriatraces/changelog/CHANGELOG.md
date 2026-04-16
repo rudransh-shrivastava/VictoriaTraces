@@ -12,6 +12,8 @@ The following `tip` changes can be tested by building VictoriaTraces components 
 
 ## tip
 
+* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtinsert in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): fix OTLP/gRPC failure with TLS enabled during HTTP/2 ALPN negotiation. See [#108](https://github.com/VictoriaMetrics/VictoriaTraces/issues/108) for details. Thank @hklhai for [the pull request #136](https://github.com/VictoriaMetrics/VictoriaTraces/pull/136).
+
 ## [v0.8.1](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.8.1)
 
 Released at 2026-04-14
