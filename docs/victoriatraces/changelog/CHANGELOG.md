@@ -12,6 +12,8 @@ The following `tip` changes can be tested by building VictoriaTraces components 
 
 ## tip
 
+* SECURITY: upgrade base docker image (Alpine) from 3.23.3 to 3.23.4. See [Alpine 3.23.4 release notes](https://www.alpinelinux.org/posts/Alpine-3.20.10-3.21.7-3.22.4-3.23.4-released.html).
+
 * BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtinsert in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): fix OTLP/gRPC failure with TLS enabled during HTTP/2 ALPN negotiation. See [#108](https://github.com/VictoriaMetrics/VictoriaTraces/issues/108) for details. Thank @hklhai for [the pull request #136](https://github.com/VictoriaMetrics/VictoriaTraces/pull/136).
 
 ## [v0.8.1](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.8.1)
