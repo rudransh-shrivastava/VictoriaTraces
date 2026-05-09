@@ -76,6 +76,20 @@ After VictoriaTraces is running, verify VMUI is working by going to `http://<vic
 
 See how to [write](#write-data) or [read](#read-data) from VictoriaTraces.
 
+#### Helm charts
+
+You can run VictoriaTraces in a Kubernetes environment
+with [VictoriaTraces single](https://docs.victoriametrics.com/helm/victoria-traces-single/)
+or [cluster](https://docs.victoriametrics.com/helm/victoria-traces-cluster/) Helm charts.
+
+#### VictoriaMetrics Operator
+
+You can also run VictoriaTraces in Kubernetes using [VictoriaMetrics Operator](https://docs.victoriametrics.com/operator/resources/).
+
+- [`VTSingle` CRD](https://docs.victoriametrics.com/operator/resources/vtsingle/) declaratively defines a single-node VictoriaTraces deployment.
+- [`VTCluster` CRD](https://docs.victoriametrics.com/operator/resources/vtcluster/) declaratively defines a VictoriaTraces cluster and lets the Operator manage `vtinsert`, `vtselect` and `vtstorage` components for you.
+
+
 ### Write data
 
 VictoriaTraces can accept trace spans via [the OpenTelemetry protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp/).
