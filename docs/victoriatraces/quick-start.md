@@ -19,10 +19,11 @@ VictoriaTraces is available in the following distributions:
 
 - Single-server-VictoriaTraces - all-in-one binary that is easy to run and maintain.
 
-VictoriaMetrics is available as:
+VictoriaTraces is available as:
 
 - docker images at [Docker Hub](https://hub.docker.com/r/victoriametrics/victoria-traces) and [Quay](https://quay.io/repository/victoriametrics/victoria-traces).
 - [Binary releases](https://github.com/VictoriaMetrics/VictoriaTraces/releases/)
+- [Helm charts](#helm-charts) and custom resources with [VictoriaMetrics Operator](#victoriaMetrics-operator)
 - [Source code](https://github.com/VictoriaMetrics/VictoriaTraces). See [How to build from sources](https://docs.victoriametrics.com/victoriatraces/#how-to-build-from-sources)
 
 ### Starting VictoriaTraces Single Node via Docker
