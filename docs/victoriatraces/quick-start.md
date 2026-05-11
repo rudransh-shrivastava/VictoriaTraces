@@ -15,9 +15,10 @@ aliases:
 
 ## How to install
 
-VictoriaTraces is available in the following distributions:
+VictoriaTraces can be deployed as:
 
-- Single-server-VictoriaTraces - all-in-one binary that is easy to run and maintain.
+- VictoriaTraces Single-node - all-in-one binary that is easy to run and maintain.
+- [VictoriaTraces Cluster](https://docs.victoriametrics.com/victoriatraces/cluster/) - same binary, deployed as separate roles within a cluster: `vtinsert`, `vtselect`, and `vtstorage`.
 
 VictoriaTraces is available as:
 
