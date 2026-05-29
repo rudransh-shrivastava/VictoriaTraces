@@ -18,16 +18,17 @@ on:
       - 'go.*'
       - '.github/workflows/main.yml'
 
-permissions:
-  contents: read
-
 concurrency:
   cancel-in-progress: true
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
 
+permissions: {}
+
 jobs:
   lint:
     name: lint
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Code checkout
@@ -58,6 +59,8 @@ jobs:
   test:
     name: test
     needs: lint
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
 
     strategy:
@@ -94,6 +97,8 @@ jobs:
   integration-test:
     name: integration-test
     needs: [lint, test]
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
 
     steps:
